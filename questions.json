@@ -1,0 +1,3002 @@
+[
+  {
+    "num": 1,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "A company wants a system that improves its predictions as it processes more historical sales data, without being explicitly reprogrammed. Which technology best fits this need?",
+    "options": {
+      "A": "Rule-based expert system",
+      "B": "Machine learning",
+      "C": "Robotic process automation",
+      "D": "Relational database"
+    },
+    "correct": "B",
+    "rationale": "ML systems learn patterns from data rather than following fixed hand-coded rules.",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 2,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "Which term describes using a trained model to generate predictions on new, unseen data?",
+    "options": {
+      "A": "Training",
+      "B": "Inference",
+      "C": "Labeling",
+      "D": "Feature engineering"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 3,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "A dataset contains customer records with a \"churned\" label (yes/no) for each customer. Which learning approach uses this labeled data to predict churn for new customers?",
+    "options": {
+      "A": "Unsupervised learning",
+      "B": "Reinforcement learning",
+      "C": "Supervised learning",
+      "D": "Semi-supervised clustering"
+    },
+    "correct": "C",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 4,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "A retailer wants to segment customers into groups based on purchasing behavior, without any predefined categories. Which ML approach fits?",
+    "options": {
+      "A": "Supervised classification",
+      "B": "Unsupervised clustering",
+      "C": "Reinforcement learning",
+      "D": "Regression"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 5,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "Which type of ML problem predicts a continuous numeric value, such as house price?",
+    "options": {
+      "A": "Classification",
+      "B": "Clustering",
+      "C": "Regression",
+      "D": "Dimensionality reduction"
+    },
+    "correct": "C",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 6,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "A robot learns to navigate a warehouse by receiving rewards for correct moves and penalties for collisions. This is an example of:",
+    "options": {
+      "A": "Supervised learning",
+      "B": "Reinforcement learning",
+      "C": "Unsupervised learning",
+      "D": "Transfer learning"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 7,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "What is \"overfitting\" in machine learning?",
+    "options": {
+      "A": "The model performs well on training data but poorly on new, unseen data",
+      "B": "The model is too simple to capture patterns",
+      "C": "The model takes too long to train",
+      "D": "The dataset is too large"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 8,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "A model performs poorly on both training and validation data. This is most likely a sign of:",
+    "options": {
+      "A": "Overfitting",
+      "B": "Underfitting",
+      "C": "Data leakage",
+      "D": "Class imbalance"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 9,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "Which metric is most appropriate for evaluating a highly imbalanced binary classification problem (e.g., fraud detection where fraud is rare)?",
+    "options": {
+      "A": "Accuracy",
+      "B": "Precision and recall (or F1 score)",
+      "C": "Mean squared error",
+      "D": "R-squared"
+    },
+    "correct": "B",
+    "rationale": "accuracy is misleading when classes are imbalanced.",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 10,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "What does \"precision\" measure in a classification model?",
+    "options": {
+      "A": "Of all actual positives, how many were correctly identified",
+      "B": "Of all predicted positives, how many were actually correct",
+      "C": "Overall correctness of the model",
+      "D": "The spread of prediction errors"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 11,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "What does \"recall\" measure?",
+    "options": {
+      "A": "Of all predicted positives, how many were correct",
+      "B": "Of all actual positives, how many were correctly identified",
+      "C": "The model's training speed",
+      "D": "The number of features used"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 12,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "A company splits its dataset into training, validation, and test sets. What is the primary purpose of the validation set?",
+    "options": {
+      "A": "Final unbiased performance reporting",
+      "B": "Tuning hyperparameters and model selection during development",
+      "C": "Storing raw unlabeled data",
+      "D": "Deploying the model to production"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 13,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "Which AWS service provides a fully managed environment to build, train, and deploy ML models at scale?",
+    "options": {
+      "A": "Amazon Comprehend",
+      "B": "Amazon SageMaker",
+      "C": "Amazon Kendra",
+      "D": "AWS Glue"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 14,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "What is a \"feature\" in the context of a machine learning model?",
+    "options": {
+      "A": "A software capability of the model",
+      "B": "An individual measurable input variable used for prediction",
+      "C": "The output/prediction of the model",
+      "D": "A type of neural network layer"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 15,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "Deep learning is best described as:",
+    "options": {
+      "A": "A rule-based system with no learning",
+      "B": "A subset of ML using multi-layered neural networks",
+      "C": "A database indexing technique",
+      "D": "A form of unsupervised clustering only"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 16,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "Which of these is an example of a structured data source well suited to traditional ML on tabular data?",
+    "options": {
+      "A": "A folder of JPEG images",
+      "B": "An audio recording",
+      "C": "A CSV of transaction records with columns for amount, date, and category",
+      "D": "A PDF contract"
+    },
+    "correct": "C",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 17,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "A company has no labeled data but wants to detect unusual patterns (outliers) in network traffic. Which approach is most appropriate?",
+    "options": {
+      "A": "Supervised classification",
+      "B": "Anomaly detection (unsupervised)",
+      "C": "Reinforcement learning",
+      "D": "Linear regression"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 18,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "What is \"label\"' in supervised learning?",
+    "options": {
+      "A": "The input feature",
+      "B": "The known correct output associated with a training example",
+      "C": "A data cleaning step",
+      "D": "A hyperparameter"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 19,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "Which of the following best describes \"bias\" in a machine learning context?",
+    "options": {
+      "A": "Random noise in the data",
+      "B": "Systematic errors that cause a model to favor certain outcomes unfairly",
+      "C": "The model's training time",
+      "D": "The number of layers in a neural network"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 20,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "A company wants to reduce the number of input features while retaining most of the important information in a dataset. This is an example of:",
+    "options": {
+      "A": "Data augmentation",
+      "B": "Dimensionality reduction",
+      "C": "Reinforcement learning",
+      "D": "Data labeling"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 21,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "Amazon SageMaker Ground Truth is primarily used for:",
+    "options": {
+      "A": "Model hosting",
+      "B": "Data labeling",
+      "C": "Model monitoring",
+      "D": "Feature storage"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 22,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "Which AWS service is a purpose-built repository for storing, sharing, and managing ML features?",
+    "options": {
+      "A": "SageMaker Feature Store",
+      "B": "SageMaker Data Wrangler",
+      "C": "SageMaker Model Registry",
+      "D": "SageMaker Pipelines"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 23,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "A model trained on a dataset that mostly reflects one demographic group performs poorly for other groups. This is primarily a concern of:",
+    "options": {
+      "A": "Model latency",
+      "B": "Bias and fairness",
+      "C": "Training cost",
+      "D": "Model versioning"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 24,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "What best describes \"epochs\" during model training?",
+    "options": {
+      "A": "The number of features in a dataset",
+      "B": "One complete pass through the entire training dataset",
+      "C": "The final accuracy score",
+      "D": "A type of loss function"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 25,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "Which of these is a common use case for computer vision ML models?",
+    "options": {
+      "A": "Detecting objects in images",
+      "B": "Translating text between languages",
+      "C": "Forecasting stock prices",
+      "D": "Clustering customer segments"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 26,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "Amazon Rekognition is best described as an AWS AI service for:",
+    "options": {
+      "A": "Text-to-speech conversion",
+      "B": "Image and video analysis",
+      "C": "Document text extraction",
+      "D": "Conversational chatbots"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 27,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "Amazon Comprehend is primarily used for:",
+    "options": {
+      "A": "Natural language processing tasks like sentiment analysis and entity recognition",
+      "B": "Image classification",
+      "C": "Speech-to-text transcription",
+      "D": "Building custom neural networks from scratch"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 28,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "Amazon Transcribe is used to:",
+    "options": {
+      "A": "Convert speech to text",
+      "B": "Convert text to speech",
+      "C": "Extract text from scanned documents",
+      "D": "Translate text between languages"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 29,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "Amazon Polly is used to:",
+    "options": {
+      "A": "Convert text to lifelike speech",
+      "B": "Transcribe audio to text",
+      "C": "Detect objects in images",
+      "D": "Build search indexes"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 30,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "Amazon Textract's primary purpose is to:",
+    "options": {
+      "A": "Translate documents",
+      "B": "Extract text and structured data (forms, tables) from scanned documents",
+      "C": "Generate summaries of documents",
+      "D": "Detect sentiment in customer reviews"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 31,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "A company wants to build a natural-language search and Q&A experience over its enterprise documents, using the approach AWS currently recommends for new RAG/enterprise-search projects.",
+    "options": {
+      "A": "Amazon Bedrock Knowledge Bases",
+      "B": "Amazon Polly",
+      "C": "Amazon Rekognition",
+      "D": "AWS Glue"
+    },
+    "correct": "A",
+    "rationale": "AWS now steers new RAG and enterprise-search projects toward Bedrock Knowledge Bases; Amazon Kendra entered maintenance mode in June 2026.",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 32,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "Amazon Lex is primarily used to build:",
+    "options": {
+      "A": "Data pipelines",
+      "B": "Conversational chatbots and voice interfaces",
+      "C": "Image recognition models",
+      "D": "Recommendation engines"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 33,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "A company needs a fully managed recommendation engine similar to what powers Amazon.com's \"customers who bought this also bought.\" Which service historically fits this need?",
+    "options": {
+      "A": "Amazon Personalize",
+      "B": "Amazon Forecast",
+      "C": "Amazon Comprehend",
+      "D": "Amazon Textract"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 34,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "Which of the following is an example of a classification use case?",
+    "options": {
+      "A": "Predicting whether a transaction is fraudulent (yes/no)",
+      "B": "Predicting a continuous stock price",
+      "C": "Grouping unlabeled customers into segments",
+      "D": "Generating a text summary"
+    },
+    "correct": "A",
+    "rationale": "Predicting a discrete category/label (fraud or not) is classification, not regression, clustering, or generation.",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 35,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "What distinguishes AI from traditional software programming?",
+    "options": {
+      "A": "AI systems always require GPUs",
+      "B": "AI systems learn patterns from data rather than following only explicit hardcoded instructions",
+      "C": "AI systems cannot process structured data",
+      "D": "AI is only used for text"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 36,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "A company wants to know whether a business problem is a good fit for ML. Which factor should NOT be a primary consideration?",
+    "options": {
+      "A": "Whether historical data reflecting the pattern exists",
+      "B": "Whether the outcome can be predicted with a fixed set of deterministic rules that never change",
+      "C": "Whether the problem tolerates some prediction error",
+      "D": "Whether enough quality data is available for training"
+    },
+    "correct": "B",
+    "rationale": "if a problem can be fully solved with fixed deterministic rules, ML is often unnecessary overhead.",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 37,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "Which AWS service lets you visually prepare and clean data for ML with a low-code interface inside SageMaker?",
+    "options": {
+      "A": "SageMaker Data Wrangler",
+      "B": "SageMaker Debugger",
+      "C": "SageMaker Model Monitor",
+      "D": "SageMaker Neo"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 38,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "What is \"transfer learning\"?",
+    "options": {
+      "A": "Moving a model between AWS Regions",
+      "B": "Using a pre-trained model as a starting point and adapting it to a new, related task",
+      "C": "Copying training data between S3 buckets",
+      "D": "Load-balancing inference traffic"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 39,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "Which of the following is an example of a regression use case?",
+    "options": {
+      "A": "Predicting whether an email is spam",
+      "B": "Predicting a customer's estimated lifetime spend in dollars",
+      "C": "Grouping similar products",
+      "D": "Generating an image caption"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 40,
+    "domain": "DOMAIN 1 \u2014 Fundamentals of AI and ML",
+    "question": "SageMaker Autopilot is primarily used to:",
+    "options": {
+      "A": "Automatically build, train, and tune ML models with minimal manual effort",
+      "B": "Automatically label images",
+      "C": "Automatically translate text",
+      "D": "Automatically encrypt S3 buckets"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 41,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "What is a \"foundation model\" (FM)?",
+    "options": {
+      "A": "A small model trained on a single narrow task",
+      "B": "A large model pre-trained on broad data that can be adapted to many downstream tasks",
+      "C": "A rules-based decision tree",
+      "D": "A database schema for storing training data"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 42,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "Which neural network architecture underlies most modern large language models (LLMs)?",
+    "options": {
+      "A": "Convolutional neural network",
+      "B": "Transformer",
+      "C": "Decision tree",
+      "D": "K-means clustering"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 43,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "What mechanism allows transformer models to weigh the relevance of different words in a sequence relative to each other?",
+    "options": {
+      "A": "Self-attention",
+      "B": "Gradient descent only",
+      "C": "Dimensionality reduction",
+      "D": "Data augmentation"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 44,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "In the context of LLMs, a \"token\" is best described as:",
+    "options": {
+      "A": "An authentication credential",
+      "B": "A unit of text (word, subword, or character) the model processes",
+      "C": "A billing unit for S3 storage",
+      "D": "A type of neural network layer"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 45,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "What is an \"embedding\" in generative AI?",
+    "options": {
+      "A": "A compressed image file",
+      "B": "A numerical vector representation of text, images, or other data that captures semantic meaning",
+      "C": "A type of prompt template",
+      "D": "A hardware accelerator"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 46,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "Which parameter controls the randomness/creativity of a foundation model's output \u2014 lower values produce more deterministic output, higher values produce more varied output?",
+    "options": {
+      "A": "Top-k only",
+      "B": "Temperature",
+      "C": "Context window",
+      "D": "Batch size"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 47,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "What is the \"context window\" of an LLM?",
+    "options": {
+      "A": "The browser window used to access the model",
+      "B": "The maximum amount of input (and often output) text, measured in tokens, the model can consider at once",
+      "C": "The time period a model was trained on",
+      "D": "The number of GPUs used for inference"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 48,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "A generative AI model confidently produces a factually incorrect or fabricated answer. This phenomenon is known as:",
+    "options": {
+      "A": "Overfitting",
+      "B": "Hallucination",
+      "C": "Underfitting",
+      "D": "Tokenization"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 49,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "Which technique reduces hallucination by grounding a model's responses in retrieved, authoritative source documents at inference time?",
+    "options": {
+      "A": "Fine-tuning only",
+      "B": "Retrieval Augmented Generation (RAG)",
+      "C": "Increasing temperature",
+      "D": "Reducing the context window"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 50,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "What is \"prompt engineering\"?",
+    "options": {
+      "A": "Writing backend code for an application",
+      "B": "Crafting and refining input instructions to a foundation model to get better, more reliable outputs",
+      "C": "Training a model from scratch",
+      "D": "Compressing model weights"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 51,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "A prompt that includes a few example input/output pairs before asking the model to complete a new instance is called:",
+    "options": {
+      "A": "Zero-shot prompting",
+      "B": "Few-shot prompting",
+      "C": "Chain-of-thought prompting",
+      "D": "Negative prompting"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 52,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "A prompt that asks a model to perform a task with no prior examples given is called:",
+    "options": {
+      "A": "Zero-shot prompting",
+      "B": "Few-shot prompting",
+      "C": "Fine-tuning",
+      "D": "RAG"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 53,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "A prompting technique that asks the model to explain its reasoning step-by-step before giving a final answer is called:",
+    "options": {
+      "A": "Zero-shot prompting",
+      "B": "Chain-of-thought prompting",
+      "C": "Negative prompting",
+      "D": "Embedding search"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 54,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "Which type of generative AI model is primarily used to generate images from noise through a gradual denoising process?",
+    "options": {
+      "A": "Diffusion model",
+      "B": "Decision tree",
+      "C": "Recurrent neural network only",
+      "D": "K-means clustering"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 55,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "A \"multimodal\" foundation model is one that can:",
+    "options": {
+      "A": "Only process text",
+      "B": "Process and/or generate more than one type of data, such as text and images together",
+      "C": "Only run on multiple GPUs",
+      "D": "Only be trained once"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 56,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "What is Amazon Bedrock?",
+    "options": {
+      "A": "A fully managed service providing access to foundation models from multiple providers through a single API",
+      "B": "A relational database engine",
+      "C": "A data labeling tool",
+      "D": "A network security service"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 57,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "Which of the following is Amazon's own family of foundation models available on Bedrock?",
+    "options": {
+      "A": "Claude",
+      "B": "Llama",
+      "C": "Titan",
+      "D": "Jurassic"
+    },
+    "correct": "C",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 58,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "Amazon Bedrock provides access to foundation models from which of these third-party providers, among others?",
+    "options": {
+      "A": "Anthropic",
+      "B": "NVIDIA",
+      "C": "Snowflake",
+      "D": "Salesforce"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 59,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "What is the main advantage of Amazon Bedrock's \"serverless\" model access?",
+    "options": {
+      "A": "You manage the underlying GPU infrastructure yourself",
+      "B": "You access foundation models via API without provisioning or managing infrastructure",
+      "C": "It only supports batch inference",
+      "D": "It requires a dedicated EC2 fleet"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 60,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "In Amazon Bedrock, \"on-demand\" pricing means:",
+    "options": {
+      "A": "You pay a flat annual license fee",
+      "B": "You pay per token/request processed with no long-term commitment",
+      "C": "You must reserve GPU capacity for a year",
+      "D": "It is only available for fine-tuned models"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 61,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "Provisioned Throughput in Amazon Bedrock is best suited for:",
+    "options": {
+      "A": "Sporadic, low-volume testing",
+      "B": "Workloads needing guaranteed, consistent throughput at scale",
+      "C": "One-time experiments",
+      "D": "Free-tier evaluation only"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 62,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "Fine-tuning a foundation model refers to:",
+    "options": {
+      "A": "Adjusting output length only",
+      "B": "Further training a pre-trained model on a smaller, domain-specific labeled dataset to specialize its behavior",
+      "C": "Changing the model's pricing tier",
+      "D": "Compressing the model for edge deployment only"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 63,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "Compared to RAG, fine-tuning is generally the better choice when:",
+    "options": {
+      "A": "You need the model to reliably use frequently changing, up-to-the-minute facts",
+      "B": "You want the model to adopt a consistent tone, style, or domain-specific behavior baked into its weights",
+      "C": "You have no labeled training data at all",
+      "D": "You want to avoid any additional training cost"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 64,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "Which of these best describes \"Retrieval Augmented Generation\" (RAG)?",
+    "options": {
+      "A": "Training a model from scratch on retrieval logs",
+      "B": "Retrieving relevant external data at query time and providing it to the model as context to ground its response",
+      "C": "A method for compressing embeddings",
+      "D": "A hyperparameter tuning technique"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 65,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "What role does a vector database play in a RAG architecture?",
+    "options": {
+      "A": "It stores model weights permanently",
+      "B": "It stores embeddings and enables fast similarity search to retrieve relevant context",
+      "C": "It hosts the user interface",
+      "D": "It manages IAM permissions"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 66,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "Which AWS service can serve as a vector store for RAG use cases via a vector engine?",
+    "options": {
+      "A": "Amazon OpenSearch Serverless",
+      "B": "Amazon SNS",
+      "C": "AWS Lambda",
+      "D": "Amazon CloudFront"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 67,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "Amazon Bedrock Knowledge Bases primarily helps developers:",
+    "options": {
+      "A": "Manage IAM roles",
+      "B": "Implement RAG by connecting foundation models to a company's own data sources",
+      "C": "Train models from scratch",
+      "D": "Encrypt data at rest"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 68,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "What is a key business benefit of generative AI for content creation?",
+    "options": {
+      "A": "It eliminates all need for human review",
+      "B": "It can rapidly draft text, images, code, or summaries to accelerate human workflows",
+      "C": "It guarantees 100% factual accuracy",
+      "D": "It requires no prompt design"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 69,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "Which of the following is a common generative AI use case?",
+    "options": {
+      "A": "Summarizing long documents",
+      "B": "Encrypting network traffic",
+      "C": "Load-balancing web servers",
+      "D": "Managing DNS records"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 70,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "\"Top-p\" (nucleus) sampling in text generation controls:",
+    "options": {
+      "A": "The number of GPUs used",
+      "B": "The cumulative probability mass from which the next token is sampled, affecting output diversity",
+      "C": "The size of the training dataset",
+      "D": "The encryption key length"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 71,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "What does \"top-k\" sampling do?",
+    "options": {
+      "A": "Limits token selection to the k most probable next tokens",
+      "B": "Selects the k largest training batches",
+      "C": "Chooses the top k cheapest models",
+      "D": "Ranks users by usage"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 72,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "A \"system prompt\" in a generative AI application is typically used to:",
+    "options": {
+      "A": "Store user passwords",
+      "B": "Set persistent instructions, tone, or constraints that guide the model's behavior across a conversation",
+      "C": "Compress the model",
+      "D": "Encrypt outputs"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 73,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "Which of these is a limitation inherent to most foundation models regarding their \"knowledge cutoff\"?",
+    "options": {
+      "A": "They can access the live internet by default",
+      "B": "Their pre-trained knowledge is fixed as of their training data date unless supplemented (e.g., via RAG or tools)",
+      "C": "They never need updates",
+      "D": "They only know about AWS services"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 74,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "What is the purpose of a \"stop sequence\" parameter when calling a foundation model?",
+    "options": {
+      "A": "To end model training early",
+      "B": "To tell the model to stop generating output once a specified string is produced",
+      "C": "To pause billing",
+      "D": "To reduce the embedding dimension"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 75,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "Model \"distillation\" refers to:",
+    "options": {
+      "A": "Filtering training data for PII",
+      "B": "Training a smaller model to mimic the behavior of a larger model, reducing size/cost while retaining much of the capability",
+      "C": "Removing embeddings from a vector store",
+      "D": "Encrypting model weights"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 76,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "Which of the following best explains why generative AI outputs can vary each time you run the same prompt?",
+    "options": {
+      "A": "The model architecture changes each run",
+      "B": "Sampling-based generation (e.g., temperature > 0) introduces controlled randomness",
+      "C": "The internet connection speed changes",
+      "D": "AWS rotates the model weekly"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 77,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "SageMaker JumpStart is best described as:",
+    "options": {
+      "A": "A marketplace/hub offering pre-trained foundation and other ML models that can be deployed or fine-tuned quickly",
+      "B": "A billing dashboard",
+      "C": "A network firewall",
+      "D": "A data labeling service only"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 78,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "What is \"in-context learning\"?",
+    "options": {
+      "A": "Retraining the model's weights permanently",
+      "B": "The model adapting its behavior for a single interaction based on examples/instructions provided directly in the prompt, without weight updates",
+      "C": "A form of unsupervised clustering",
+      "D": "A hardware optimization technique"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 79,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "Which of these AWS services/capabilities would you most likely use with Bedrock to orchestrate a multi-step agent that calls APIs and takes actions?",
+    "options": {
+      "A": "Amazon Bedrock AgentCore",
+      "B": "Amazon CloudWatch",
+      "C": "AWS Direct Connect",
+      "D": "Amazon WorkSpaces"
+    },
+    "correct": "A",
+    "rationale": "AgentCore is the current Bedrock agent-orchestration runtime (the earlier 'Bedrock Agents' offering is now in maintenance mode as 'Bedrock Agents Classic').",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 80,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "Which generative AI cost driver typically scales directly with the amount of input and output text processed?",
+    "options": {
+      "A": "Number of IAM roles",
+      "B": "Token usage",
+      "C": "Number of Availability Zones",
+      "D": "VPC peering connections"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 81,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "A company wants a foundation model to output responses in a strict JSON schema for downstream automation. Which technique most directly helps?",
+    "options": {
+      "A": "Increasing temperature to maximum",
+      "B": "Careful prompt engineering specifying the exact output format (and possibly using structured output features)",
+      "C": "Disabling the context window",
+      "D": "Switching to an unsupervised clustering model"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 82,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "What differentiates generative AI from traditional discriminative ML models?",
+    "options": {
+      "A": "Generative AI creates new content (text, images, etc.) resembling training data, whereas discriminative models typically classify or predict labels",
+      "B": "Generative AI cannot use neural networks",
+      "C": "Discriminative models always outperform generative models",
+      "D": "There is no meaningful difference"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 83,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "Amazon Quick is best described as a service that:",
+    "options": {
+      "A": "Manages billing invoices",
+      "B": "Provides a generative-AI-powered business assistant and analytics experience built on an organization's enterprise data",
+      "C": "Handles DNS routing",
+      "D": "Encrypts EBS volumes"
+    },
+    "correct": "B",
+    "rationale": "Amazon Quick is the current AWS business-assistant offering; Amazon Q Business, its predecessor, closed to new customers in July 2026.",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 84,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "Which of these is a valid reason to choose a smaller foundation model over a larger one for a production use case?",
+    "options": {
+      "A": "Smaller models are always more accurate",
+      "B": "Lower latency and cost when the task is relatively simple and doesn't require the largest model's full capability",
+      "C": "Smaller models never hallucinate",
+      "D": "Smaller models require RAG to function"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 85,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "In generative AI, what is a common purpose of \"negative prompting\" (where supported, mainly in image generation)?",
+    "options": {
+      "A": "Specifying what should be excluded or avoided in the generated output",
+      "B": "Increasing the model's temperature",
+      "C": "Reducing the context window",
+      "D": "Compressing embeddings"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 86,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "What best describes a \"vector embedding's\" dimensionality?",
+    "options": {
+      "A": "The number of tokens in the prompt",
+      "B": "The number of numerical values in the vector representing the semantic features of the input",
+      "C": "The number of GPUs used",
+      "D": "The number of training epochs"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 87,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "Which factor most directly affects the cost of running inference on a Bedrock foundation model under on-demand pricing?",
+    "options": {
+      "A": "Number of IAM users",
+      "B": "Number of input and output tokens processed",
+      "C": "Number of S3 buckets",
+      "D": "VPC subnet count"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 88,
+    "domain": "DOMAIN 2 \u2014 Fundamentals of Generative AI",
+    "question": "A company wants its generative AI chatbot to answer questions using only its private internal knowledge base and cite where facts came from. Which approach best fits?",
+    "options": {
+      "A": "Increase temperature to 1.0",
+      "B": "Implement RAG with a knowledge base and instruct the model to cite retrieved sources",
+      "C": "Use zero-shot prompting with no external data",
+      "D": "Disable the context window"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 89,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "A company wants to summarize thousands of customer support tickets daily with minimal engineering effort and no need for infrastructure management. Which approach best fits?",
+    "options": {
+      "A": "Train a custom model from scratch on SageMaker",
+      "B": "Call a foundation model via Amazon Bedrock with a summarization prompt",
+      "C": "Build a rule-based keyword extractor",
+      "D": "Manually summarize tickets"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 90,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "A company's chatbot must answer questions about a rapidly changing internal product catalog updated daily. Which is the most efficient approach to keep answers current?",
+    "options": {
+      "A": "Fine-tune the model daily on the entire catalog",
+      "B": "Use RAG so the model retrieves the latest catalog data at query time",
+      "C": "Use a static zero-shot prompt with no external data",
+      "D": "Increase the temperature setting"
+    },
+    "correct": "B",
+    "rationale": "RAG avoids costly, frequent retraining for fast-changing data.",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 91,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "A company wants a foundation model to consistently write in a specific brand voice and follow a proprietary internal style guide across thousands of interactions. Which is generally most effective?",
+    "options": {
+      "A": "RAG only",
+      "B": "Fine-tuning on examples of the desired style, possibly combined with prompt engineering",
+      "C": "Increasing the context window only",
+      "D": "Disabling guardrails"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 92,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "Which factor is most important when selecting a foundation model for a latency-sensitive, real-time customer chat application?",
+    "options": {
+      "A": "The model's training dataset size only",
+      "B": "Inference latency and response time characteristics of the model",
+      "C": "The model's release date only",
+      "D": "The number of parameters exclusively, regardless of latency"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 93,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "A company needs to classify support tickets into a fixed set of categories and has thousands of labeled historical examples. What is a reasonable, cost-effective approach?",
+    "options": {
+      "A": "Use a large general-purpose foundation model with zero-shot prompting for every ticket at high cost",
+      "B": "Consider a smaller, fine-tuned or purpose-built classification model, which may be cheaper and faster at scale",
+      "C": "Manually classify every ticket",
+      "D": "Use image recognition"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 94,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "Which AWS service provides a low-code way to evaluate and compare different foundation models on Bedrock for a given use case?",
+    "options": {
+      "A": "Amazon Bedrock Model Evaluation",
+      "B": "AWS Config",
+      "C": "Amazon GuardDuty",
+      "D": "AWS Trusted Advisor"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 95,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "A company wants to test whether Model A or Model B produces better summaries for its use case, using human reviewers to judge outputs. This is an example of:",
+    "options": {
+      "A": "Automated regression testing only",
+      "B": "Human-based (human-in-the-loop) model evaluation",
+      "C": "Load testing",
+      "D": "Vulnerability scanning"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 96,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "Which metric is commonly used to automatically evaluate the quality of machine-generated text summaries against reference summaries?",
+    "options": {
+      "A": "ROUGE score",
+      "B": "IOPS",
+      "C": "VPC flow logs",
+      "D": "CPU utilization"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 97,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "A company building a RAG application notices the model sometimes retrieves irrelevant document chunks. Which of the following would most directly help?",
+    "options": {
+      "A": "Increasing the model's temperature",
+      "B": "Improving the chunking strategy and embedding quality of the knowledge base",
+      "C": "Disabling the vector database",
+      "D": "Removing all guardrails"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 98,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "What is \"chunking\" in the context of building a RAG knowledge base?",
+    "options": {
+      "A": "Splitting large documents into smaller segments to improve embedding and retrieval relevance",
+      "B": "Compressing model weights",
+      "C": "A billing calculation",
+      "D": "A type of prompt injection attack"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 99,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "A company wants to deploy a foundation model for inference but only needs it available a few hours per day. Which Bedrock/SageMaker consideration reduces cost?",
+    "options": {
+      "A": "Reserve provisioned throughput/instances for 24/7 use regardless of actual usage",
+      "B": "Use on-demand or auto-scaling endpoints that scale down when not in use",
+      "C": "Always use the largest available model",
+      "D": "Disable monitoring"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 100,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "SageMaker Inference endpoints support which deployment option for infrequent, bursty traffic where cost efficiency matters more than always-on low latency?",
+    "options": {
+      "A": "Real-time endpoints only",
+      "B": "Serverless inference",
+      "C": "Batch transform exclusively",
+      "D": "On-premises deployment only"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 101,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "A company wants to run inference on a large dataset of documents all at once, without needing a persistent low-latency endpoint. Which SageMaker inference option fits best?",
+    "options": {
+      "A": "Real-time endpoint",
+      "B": "Batch transform",
+      "C": "Asynchronous inference only",
+      "D": "Multi-model endpoint required"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 102,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "SageMaker asynchronous inference is best suited for:",
+    "options": {
+      "A": "Large payloads or long processing times where immediate response isn't required",
+      "B": "Sub-100ms latency chatbots",
+      "C": "Simple key-value lookups",
+      "D": "Static website hosting"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 103,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "A company wants to reduce hallucinations and keep costs predictable while answering questions strictly from an internal PDF policy library. What is the best-fit architecture?",
+    "options": {
+      "A": "Fine-tune a model on random internet text",
+      "B": "RAG using Bedrock Knowledge Bases sourced from the PDF library, with prompt instructions to only answer from retrieved context",
+      "C": "Use a model with no external data and highest temperature",
+      "D": "Use Amazon Rekognition"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 104,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "Which AWS capability can help you build a multi-step generative AI \"agent\" that can call company APIs (e.g., check order status) based on natural language input?",
+    "options": {
+      "A": "Amazon Bedrock AgentCore",
+      "B": "Amazon CloudWatch",
+      "C": "AWS Direct Connect",
+      "D": "Amazon Route 53"
+    },
+    "correct": "A",
+    "rationale": "AgentCore is the current managed runtime for building and deploying Bedrock-based agents.",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 105,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "A company wants to compare the cost of fine-tuning a foundation model versus using RAG for a knowledge-intensive but frequently updated use case. Which generally has lower ongoing costs for frequently changing data?",
+    "options": {
+      "A": "Fine-tuning, because it's a one-time process regardless of update frequency",
+      "B": "RAG, because it avoids repeated retraining costs when the underlying data changes often",
+      "C": "Neither has any cost",
+      "D": "Cost is unrelated to the frequency of data changes"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 106,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "What is \"prompt template\" management useful for in a production generative AI application?",
+    "options": {
+      "A": "Managing IAM roles",
+      "B": "Standardizing, versioning, and reusing tested prompt structures across an application",
+      "C": "Compressing model weights",
+      "D": "Configuring VPC peering"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 107,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "A company evaluating foundation models for a coding-assistant use case should primarily weigh:",
+    "options": {
+      "A": "Only the model's image generation quality",
+      "B": "The model's performance on code-related benchmarks, latency, and cost for their expected volume",
+      "C": "Only the model's release date",
+      "D": "Only the number of AWS Regions the model is named after"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 108,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "Bedrock Guardrails can be used to:",
+    "options": {
+      "A": "Encrypt EBS volumes",
+      "B": "Filter undesirable content, block certain topics, and reduce harmful or off-brand outputs from foundation models",
+      "C": "Manage DNS routing",
+      "D": "Provision EC2 Auto Scaling groups"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 109,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "A company wants its generative AI app to avoid discussing competitor products. Which Bedrock feature most directly supports this?",
+    "options": {
+      "A": "Bedrock Guardrails with denied topics configured",
+      "B": "Increasing the context window",
+      "C": "Batch transform",
+      "D": "SageMaker Ground Truth"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 110,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "Which of the following is an appropriate use case for Amazon SageMaker rather than a pre-built AI service like Comprehend or Rekognition?",
+    "options": {
+      "A": "A company needs a highly customized model architecture trained on proprietary data that off-the-shelf AI services can't address",
+      "B": "A company needs simple sentiment analysis of English tweets",
+      "C": "A company needs standard text-to-speech",
+      "D": "A company needs basic image labels"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 111,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "A startup wants to add sentiment analysis to its app with minimal ML expertise and no custom model training. What's the most efficient approach?",
+    "options": {
+      "A": "Build and train a custom NLP model on SageMaker from scratch",
+      "B": "Call Amazon Comprehend's built-in sentiment analysis API",
+      "C": "Fine-tune a foundation model on Bedrock",
+      "D": "Hire a data science team first"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 112,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "What is a key tradeoff of using a very large foundation model for a simple, high-volume classification task?",
+    "options": {
+      "A": "Higher accuracy always, at zero cost tradeoff",
+      "B": "Higher cost and latency than may be necessary for a simple task, compared to a smaller specialized model",
+      "C": "It cannot be used via an API",
+      "D": "It requires no evaluation"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 113,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "A company wants a private, secure way to customize a foundation model with its proprietary data without that data being used to train the underlying provider's shared model. This concern is best addressed by:",
+    "options": {
+      "A": "Reviewing the AWS/Bedrock data handling and model customization policies, which by default do not use customer data to train base FMs",
+      "B": "Assuming all cloud providers use customer data by default",
+      "C": "Avoiding generative AI entirely",
+      "D": "Using only public models with no data protections"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 114,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "As of the current AWS product lineup, which statement about Amazon Kendra and Amazon Bedrock Knowledge Bases is accurate?",
+    "options": {
+      "A": "Kendra entered maintenance mode in 2026 and AWS now directs new RAG/enterprise-search projects toward Bedrock Knowledge Bases",
+      "B": "Kendra replaced Bedrock Knowledge Bases",
+      "C": "Both services were fully discontinued",
+      "D": "Bedrock Knowledge Bases cannot be used for enterprise search"
+    },
+    "correct": "A",
+    "rationale": "Kendra is closed to new customers; existing deployments keep running, but new work is directed to Bedrock Knowledge Bases.",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 115,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "A company wants to A/B test two different prompt versions in production to see which yields better customer satisfaction. This is an example of:",
+    "options": {
+      "A": "Model training",
+      "B": "Prompt evaluation / experimentation",
+      "C": "Data labeling",
+      "D": "IAM policy management"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 116,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "What does \"grounding\" mean in the context of generative AI applications?",
+    "options": {
+      "A": "Physically connecting servers to earth ground",
+      "B": "Anchoring model outputs to verified, retrieved, or provided data sources to improve factual accuracy",
+      "C": "Reducing model temperature to zero always",
+      "D": "Disabling the model entirely"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 117,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "A team wants to continuously monitor a deployed model for data drift (input data changing over time from what it was trained on). Which SageMaker capability helps?",
+    "options": {
+      "A": "SageMaker Model Monitor",
+      "B": "SageMaker Ground Truth",
+      "C": "SageMaker Canvas",
+      "D": "SageMaker Studio Lab only"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 118,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "SageMaker Canvas is best described as:",
+    "options": {
+      "A": "A no-code/low-code visual interface for building ML models and generating predictions",
+      "B": "A network monitoring tool",
+      "C": "A container orchestration service",
+      "D": "A billing dashboard"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 119,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "A company must choose between two Bedrock foundation models: one cheaper with slightly lower quality, one pricier with higher quality. For a low-stakes internal tool with huge volume, what's typically the better first choice to evaluate?",
+    "options": {
+      "A": "Always choose the most expensive model regardless of use case",
+      "B": "Start with the cheaper model and evaluate if quality meets requirements before scaling up",
+      "C": "Always avoid Bedrock",
+      "D": "Use no model at all"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 120,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "What is the primary purpose of a \"system message\" versus a \"user message\" in a chat-based foundation model API call?",
+    "options": {
+      "A": "They are identical with no distinction",
+      "B": "The system message sets persistent behavior/context for the assistant, while the user message contains the specific query",
+      "C": "The user message sets pricing",
+      "D": "The system message is only for billing"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 121,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "Which factor most directly impacts the relevance of documents retrieved in a RAG pipeline?",
+    "options": {
+      "A": "The quality of the embedding model and similarity search configuration",
+      "B": "The color scheme of the front-end application",
+      "C": "The AWS Region name",
+      "D": "The number of IAM users"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 122,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "A company building a generative AI travel assistant wants it to call a live flight-status API mid-conversation to answer \"Is my flight delayed?\" This requires:",
+    "options": {
+      "A": "A static foundation model with no tool integration",
+      "B": "An agentic architecture (e.g., Amazon Bedrock AgentCore) that can invoke external APIs/tools based on the conversation",
+      "C": "Only fine-tuning",
+      "D": "Only RAG with static documents"
+    },
+    "correct": "B",
+    "rationale": "Live, dynamic API calls mid-conversation require an agent runtime like AgentCore, not fine-tuning or static RAG alone.",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 123,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "What is the main benefit of using Amazon Bedrock over self-hosting open-source foundation models on EC2?",
+    "options": {
+      "A": "Bedrock guarantees zero cost",
+      "B": "Bedrock provides managed, serverless access to models with less operational overhead (no infrastructure to provision or patch)",
+      "C": "Self-hosting is always faster",
+      "D": "Bedrock cannot access any third-party models"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 124,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "A company notices its generative AI application often provides answers outside its intended domain (e.g., a cooking app answering legal questions). Which is the most direct fix?",
+    "options": {
+      "A": "Increase the context window",
+      "B": "Use guardrails/system prompts to constrain topic scope and validate/filter user inputs and model outputs",
+      "C": "Decrease the number of tokens",
+      "D": "Switch to unsupervised learning"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 125,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "Which of the following best supports iterative, low-risk experimentation with different foundation models before committing to production architecture?",
+    "options": {
+      "A": "Directly launching to all customers with no testing",
+      "B": "Using the Bedrock console/playground to prototype prompts and compare models before building the full application",
+      "C": "Skipping evaluation entirely",
+      "D": "Training a new model from scratch immediately"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 126,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "A company's use case requires generating images from text descriptions for marketing materials. Which category of foundation model is appropriate?",
+    "options": {
+      "A": "Text-to-image (diffusion-based) generative model",
+      "B": "Text classification model",
+      "C": "Time-series forecasting model",
+      "D": "Speech-to-text model"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 127,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "What is a key consideration when selecting between a foundation model available via Bedrock versus training a custom model on SageMaker for a generative text use case?",
+    "options": {
+      "A": "Custom training is always cheaper and faster",
+      "B": "Time-to-market, cost, and required customization depth \u2014 Bedrock is typically faster to deploy for common tasks, while SageMaker custom training suits highly specialized needs",
+      "C": "SageMaker cannot handle text data",
+      "D": "Bedrock requires you to manage GPU clusters"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 128,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "A model evaluation reveals that a foundation model's response quality drops significantly for prompts in a language other than English. This finding should drive which decision?",
+    "options": {
+      "A": "Ignore it since English is the default",
+      "B": "Consider using a model with stronger multilingual support, or fine-tune/adjust prompts to improve non-English performance if that use case matters",
+      "C": "Immediately halt all AI projects",
+      "D": "Switch to computer vision"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 129,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "Which AWS service integration allows a Bedrock-powered application to search and retrieve from a company's existing SharePoint or S3 document repository as part of RAG?",
+    "options": {
+      "A": "Amazon Bedrock Knowledge Bases with a supported data source connector",
+      "B": "Amazon Route 53",
+      "C": "AWS Direct Connect",
+      "D": "Amazon WorkMail"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 130,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "A company wants to reduce the cost of a generative AI application without significantly harming output quality. Which is a valid cost-optimization lever?",
+    "options": {
+      "A": "Right-sizing the chosen foundation model, using prompt caching where supported, and limiting unnecessary token usage",
+      "B": "Always choosing the biggest model available",
+      "C": "Removing all evaluation processes",
+      "D": "Ignoring latency requirements"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 131,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "What is \"prompt injection\"?",
+    "options": {
+      "A": "A method for improving model accuracy",
+      "B": "A security risk where malicious input tries to manipulate a model into ignoring its original instructions or performing unintended actions",
+      "C": "A type of data compression",
+      "D": "A billing optimization technique"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 132,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "Which mitigation helps reduce the risk of prompt injection in a generative AI application?",
+    "options": {
+      "A": "Increasing temperature to maximum",
+      "B": "Input validation/sanitization, guardrails, and clearly separating trusted system instructions from untrusted user input",
+      "C": "Removing all system prompts",
+      "D": "Disabling logging"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 133,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "A company building a customer-facing chatbot wants to measure whether responses are helpful using real user feedback (thumbs up/down). This is an example of:",
+    "options": {
+      "A": "Offline-only evaluation",
+      "B": "Online/production evaluation using real user feedback signals",
+      "C": "Unit testing only",
+      "D": "Data labeling for supervised classification only"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 134,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "Which of the following is a valid reason to fine-tune a foundation model rather than only prompt-engineer it?",
+    "options": {
+      "A": "You need the model's fundamental behavior/style adapted based on many examples in ways that prompting alone cannot reliably achieve",
+      "B": "You want to avoid any additional cost",
+      "C": "You have no training data",
+      "D": "Fine-tuning is always required for every use case"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 135,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "A financial services company wants to summarize earnings call transcripts and extract specific figures (revenue, EPS) as structured JSON. Which approach is most suitable?",
+    "options": {
+      "A": "A foundation model prompted with clear extraction instructions and an example output schema (few-shot), possibly combined with output validation",
+      "B": "Manual data entry only",
+      "C": "Image classification",
+      "D": "Speech-to-text only, with no further processing"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 136,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "What role does \"temperature = 0\" (or near-zero) play in a production use case like extracting structured data from documents?",
+    "options": {
+      "A": "It increases creative variability, which is desirable for extraction tasks",
+      "B": "It makes output more deterministic and consistent, which is usually preferred for extraction/classification tasks",
+      "C": "It disables the model entirely",
+      "D": "It has no effect on output"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 137,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "A company wants to reduce latency for a Bedrock-powered app that repeatedly sends similar long system prompts. Which feature/technique can help reduce redundant processing cost/latency?",
+    "options": {
+      "A": "Prompt caching (where supported)",
+      "B": "Increasing the model size",
+      "C": "Disabling guardrails",
+      "D": "Removing the knowledge base"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 138,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "Which is the best description of \"model customization\" options generally available on Amazon Bedrock?",
+    "options": {
+      "A": "Only prompt engineering is possible, nothing else",
+      "B": "Options can include fine-tuning and continued pre-training on select models, in addition to prompt engineering and RAG",
+      "C": "Bedrock never allows any customization",
+      "D": "Only image models can be customized"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 139,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "A company deploying a foundation model must choose between multiple candidate models. Business stakeholders prioritize accuracy on legal document review, while engineering prioritizes low latency. What's the best process?",
+    "options": {
+      "A": "Pick a model at random",
+      "B": "Run structured evaluation (benchmarks + human review) balancing both accuracy and latency/cost against defined business requirements",
+      "C": "Ignore engineering constraints entirely",
+      "D": "Ignore business requirements entirely"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 140,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "A team wants to reduce the chance that a customer-facing generative AI assistant reveals its underlying system prompt when asked directly by a user. This concern relates most to:",
+    "options": {
+      "A": "Model training speed",
+      "B": "Prompt security / guardrails against prompt leakage",
+      "C": "Data labeling quality",
+      "D": "VPC configuration"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 141,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "Which of these best distinguishes SageMaker \"real-time inference\" from \"batch transform\"?",
+    "options": {
+      "A": "Real-time provides low-latency, on-demand predictions for individual requests; batch transform processes large datasets asynchronously without needing a persistent endpoint",
+      "B": "They are functionally identical",
+      "C": "Batch transform requires no data",
+      "D": "Real-time inference cannot be used for text"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 142,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "A company's generative AI use case requires citing exact source paragraphs used to generate an answer, for compliance/audit reasons. Which architecture pattern best supports this?",
+    "options": {
+      "A": "Fine-tuning only, with no retrieval step",
+      "B": "RAG, where retrieved source chunks are tracked and can be returned/cited alongside the generated answer",
+      "C": "Zero-shot prompting with no external documents",
+      "D": "Using only image generation models"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 143,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "What is the main purpose of running multiple candidate prompts through automated + human evaluation before selecting a final production prompt?",
+    "options": {
+      "A": "To increase model training time unnecessarily",
+      "B": "To identify the prompt version that most reliably produces accurate, safe, and useful outputs for the target use case",
+      "C": "To reduce IAM permissions",
+      "D": "To eliminate the need for guardrails"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 144,
+    "domain": "DOMAIN 3 \u2014 Applications of Foundation Models",
+    "question": "A company wants the lowest operational overhead when experimenting with several different third-party foundation models for a proof of concept. Which AWS approach is most appropriate?",
+    "options": {
+      "A": "Self-host each model on separately managed EC2 GPU clusters",
+      "B": "Use Amazon Bedrock's unified API to access and compare multiple providers' models without managing infrastructure",
+      "C": "Build each model from scratch",
+      "D": "Avoid AWS entirely"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 145,
+    "domain": "DOMAIN 4 \u2014 Guidelines for Responsible AI",
+    "question": "What is the core goal of \"responsible AI\" practices?",
+    "options": {
+      "A": "Maximizing model size regardless of impact",
+      "B": "Developing and deploying AI systems that are fair, transparent, safe, secure, and accountable",
+      "C": "Minimizing all human oversight",
+      "D": "Avoiding any use of AI"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 146,
+    "domain": "DOMAIN 4 \u2014 Guidelines for Responsible AI",
+    "question": "A hiring model trained on historical hiring data systematically disadvantages a particular demographic group because that pattern existed in past decisions. This is an example of:",
+    "options": {
+      "A": "Overfitting",
+      "B": "Bias inherited from historical/training data",
+      "C": "A hardware failure",
+      "D": "A tokenization issue"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 147,
+    "domain": "DOMAIN 4 \u2014 Guidelines for Responsible AI",
+    "question": "Which AWS tool helps detect potential bias in training data and model predictions?",
+    "options": {
+      "A": "Amazon SageMaker Clarify",
+      "B": "Amazon Rekognition",
+      "C": "AWS Direct Connect",
+      "D": "Amazon Route 53"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 148,
+    "domain": "DOMAIN 4 \u2014 Guidelines for Responsible AI",
+    "question": "What does \"explainability\" mean in the context of an ML model?",
+    "options": {
+      "A": "The ability to explain, in understandable terms, why a model produced a particular output",
+      "B": "The model's file size",
+      "C": "The model's training duration",
+      "D": "The number of AWS Regions the model is deployed in"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 149,
+    "domain": "DOMAIN 4 \u2014 Guidelines for Responsible AI",
+    "question": "Why might a highly complex deep learning model be described as a \"black box\"?",
+    "options": {
+      "A": "It is physically stored in a black server case",
+      "B": "Its internal decision-making process is difficult for humans to interpret directly",
+      "C": "It cannot process any data",
+      "D": "It only works offline"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 150,
+    "domain": "DOMAIN 4 \u2014 Guidelines for Responsible AI",
+    "question": "Which practice helps improve transparency for stakeholders about a model's intended use, limitations, and performance characteristics?",
+    "options": {
+      "A": "Hiding all model details",
+      "B": "Publishing model cards / documentation describing intended use, training data, limitations, and performance",
+      "C": "Removing all monitoring",
+      "D": "Avoiding any evaluation"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 151,
+    "domain": "DOMAIN 4 \u2014 Guidelines for Responsible AI",
+    "question": "What is \"human-in-the-loop\" (HITL) in an AI system?",
+    "options": {
+      "A": "A process where humans review, validate, or intervene in AI-driven decisions, especially high-stakes ones",
+      "B": "A fully automated pipeline with zero human involvement",
+      "C": "A type of neural network layer",
+      "D": "A billing model"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 152,
+    "domain": "DOMAIN 4 \u2014 Guidelines for Responsible AI",
+    "question": "A healthcare company deploying an AI diagnostic support tool decides that a physician must always review and approve AI-suggested diagnoses before action is taken. This reflects the responsible AI principle of:",
+    "options": {
+      "A": "Full automation",
+      "B": "Human oversight / human-in-the-loop for high-stakes decisions",
+      "C": "Maximizing model temperature",
+      "D": "Reducing the context window"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 153,
+    "domain": "DOMAIN 4 \u2014 Guidelines for Responsible AI",
+    "question": "What does \"fairness\" mean in a responsible AI context?",
+    "options": {
+      "A": "Ensuring the model performs equally fast for all users",
+      "B": "Working to ensure AI systems do not create or reinforce unjust bias against particular groups",
+      "C": "Maximizing throughput",
+      "D": "Reducing token costs"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 154,
+    "domain": "DOMAIN 4 \u2014 Guidelines for Responsible AI",
+    "question": "Which of the following is an example of applying responsible AI principles during model development?",
+    "options": {
+      "A": "Testing the model's performance across different demographic subgroups before deployment",
+      "B": "Skipping any evaluation to save time",
+      "C": "Ignoring training data sources",
+      "D": "Deploying without any documentation"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 155,
+    "domain": "DOMAIN 4 \u2014 Guidelines for Responsible AI",
+    "question": "What is a \"model card\" typically used to document?",
+    "options": {
+      "A": "Only the model's billing information",
+      "B": "The model's intended use cases, training data characteristics, performance metrics, limitations, and ethical considerations",
+      "C": "Only the model's IP address",
+      "D": "Only network configuration"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 156,
+    "domain": "DOMAIN 4 \u2014 Guidelines for Responsible AI",
+    "question": "AWS AI Service Cards are provided by AWS primarily to:",
+    "options": {
+      "A": "Increase marketing of AWS services",
+      "B": "Give transparency into the intended use, limitations, and responsible AI design considerations of specific AWS AI services",
+      "C": "Replace all customer testing",
+      "D": "Guarantee zero bias"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 157,
+    "domain": "DOMAIN 4 \u2014 Guidelines for Responsible AI",
+    "question": "A company deploying a generative AI content moderation tool wants to minimize both false positives (flagging safe content) and false negatives (missing harmful content). This tradeoff is best addressed through:",
+    "options": {
+      "A": "Ignoring the tradeoff entirely",
+      "B": "Careful threshold tuning, ongoing evaluation, and human review processes",
+      "C": "Removing moderation entirely",
+      "D": "Using the largest possible temperature setting"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 158,
+    "domain": "DOMAIN 4 \u2014 Guidelines for Responsible AI",
+    "question": "Which of these best describes \"toxicity\" detection in the context of responsible AI for generative models?",
+    "options": {
+      "A": "Detecting hardware failures",
+      "B": "Identifying harmful, offensive, or inappropriate content in model inputs/outputs",
+      "C": "Measuring GPU temperature",
+      "D": "Measuring network latency"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 159,
+    "domain": "DOMAIN 4 \u2014 Guidelines for Responsible AI",
+    "question": "A company wants its generative AI assistant to refuse to generate certain categories of harmful content (e.g., instructions for violence). Which Bedrock capability directly supports this?",
+    "options": {
+      "A": "Bedrock Guardrails with content filters",
+      "B": "SageMaker Ground Truth",
+      "C": "Amazon Kendra",
+      "D": "AWS Direct Connect"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 160,
+    "domain": "DOMAIN 4 \u2014 Guidelines for Responsible AI",
+    "question": "What is a key responsible AI consideration regarding the environmental impact of training very large foundation models?",
+    "options": {
+      "A": "Training large models has zero environmental impact",
+      "B": "Large-scale model training can consume significant energy/compute resources, so sustainability (e.g., choosing right-sized models, efficient infrastructure) is a relevant consideration",
+      "C": "Environmental impact is irrelevant to AI",
+      "D": "Only image models have environmental impact"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 161,
+    "domain": "DOMAIN 4 \u2014 Guidelines for Responsible AI",
+    "question": "\"Veracity and robustness\" as a responsible AI dimension primarily concerns:",
+    "options": {
+      "A": "Whether a model produces accurate, reliable outputs consistently, including resistance to adversarial inputs",
+      "B": "Only the model's price",
+      "C": "Only the model's release date",
+      "D": "Only network bandwidth"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 162,
+    "domain": "DOMAIN 4 \u2014 Guidelines for Responsible AI",
+    "question": "A company discovers its generative AI model performs significantly worse for certain accents when transcribing speech. Addressing this is primarily a matter of:",
+    "options": {
+      "A": "Ignoring the issue since it's a minor edge case",
+      "B": "Fairness/bias evaluation and potentially retraining/fine-tuning or selecting a model with broader training data coverage",
+      "C": "Increasing the temperature",
+      "D": "Disabling the microphone input"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 163,
+    "domain": "DOMAIN 4 \u2014 Guidelines for Responsible AI",
+    "question": "Which of the following best supports \"accountability\" in an organization's AI governance?",
+    "options": {
+      "A": "No one is responsible for AI outcomes",
+      "B": "Clear ownership, documented decision processes, and defined escalation paths for AI system issues",
+      "C": "Removing all documentation",
+      "D": "Avoiding any audit trail"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 164,
+    "domain": "DOMAIN 4 \u2014 Guidelines for Responsible AI",
+    "question": "A company wants to continuously check whether a deployed model's fairness metrics degrade over time as real-world data shifts. This is an example of:",
+    "options": {
+      "A": "One-time pre-deployment testing only, with no further checks",
+      "B": "Ongoing bias/fairness monitoring in production",
+      "C": "Ignoring the model after deployment",
+      "D": "A network security control"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 165,
+    "domain": "DOMAIN 4 \u2014 Guidelines for Responsible AI",
+    "question": "What responsible AI principle is most directly served by clearly disclosing to end users when they are interacting with an AI system rather than a human?",
+    "options": {
+      "A": "Transparency",
+      "B": "Data encryption",
+      "C": "Load balancing",
+      "D": "Cost optimization"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 166,
+    "domain": "DOMAIN 4 \u2014 Guidelines for Responsible AI",
+    "question": "Which practice helps reduce bias introduced during the data collection phase of an ML project?",
+    "options": {
+      "A": "Using a single, narrow, non-representative data source",
+      "B": "Ensuring training data is diverse and representative of the population the model will serve",
+      "C": "Skipping data review entirely",
+      "D": "Maximizing model size only"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 167,
+    "domain": "DOMAIN 4 \u2014 Guidelines for Responsible AI",
+    "question": "A responsible AI review determines a generative model occasionally produces outputs that could be interpreted as medical advice, which the company is not licensed to provide. What is an appropriate mitigation?",
+    "options": {
+      "A": "Ignore the finding",
+      "B": "Add guardrails/system instructions restricting medical advice topics and include appropriate disclaimers",
+      "C": "Increase temperature",
+      "D": "Remove all content filters"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 168,
+    "domain": "DOMAIN 4 \u2014 Guidelines for Responsible AI",
+    "question": "Interpretability techniques such as feature importance help stakeholders understand:",
+    "options": {
+      "A": "Which input features most influenced a specific model prediction",
+      "B": "The network's IP configuration",
+      "C": "The billing breakdown only",
+      "D": "The number of AWS Availability Zones used"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 169,
+    "domain": "DOMAIN 4 \u2014 Guidelines for Responsible AI",
+    "question": "Which of these is a responsible AI best practice when sourcing training data?",
+    "options": {
+      "A": "Ignoring data provenance and licensing entirely",
+      "B": "Understanding and documenting where training data came from, including licensing and consent considerations",
+      "C": "Only using data with no documentation",
+      "D": "Avoiding any data governance review"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 170,
+    "domain": "DOMAIN 4 \u2014 Guidelines for Responsible AI",
+    "question": "A company building a generative AI resume-screening tool wants to proactively test for disparate impact across gender and ethnicity before launch. This testing activity is best categorized as:",
+    "options": {
+      "A": "Security penetration testing only",
+      "B": "Fairness/bias evaluation as part of responsible AI validation",
+      "C": "Load testing",
+      "D": "Cost optimization"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 171,
+    "domain": "DOMAIN 4 \u2014 Guidelines for Responsible AI",
+    "question": "What is the purpose of establishing clear AI usage policies and acceptable-use guidelines within an organization?",
+    "options": {
+      "A": "To slow down all AI adoption unnecessarily",
+      "B": "To ensure employees use AI systems safely, ethically, and in alignment with legal/regulatory and company standards",
+      "C": "To eliminate any oversight",
+      "D": "To increase model temperature"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 172,
+    "domain": "DOMAIN 4 \u2014 Guidelines for Responsible AI",
+    "question": "Which of the following best reflects the responsible AI principle of \"safety\" in generative AI deployment?",
+    "options": {
+      "A": "Actively working to prevent the system from producing outputs that could cause physical, financial, or reputational harm",
+      "B": "Maximizing token throughput only",
+      "C": "Reducing storage costs only",
+      "D": "Increasing model size regardless of risk"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 173,
+    "domain": "DOMAIN 5 \u2014 Security, Compliance, and Governance for AI Solutions",
+    "question": "Which AWS service provides fine-grained access control to determine which users/roles can invoke specific Bedrock models or SageMaker resources?",
+    "options": {
+      "A": "AWS IAM",
+      "B": "Amazon Route 53",
+      "C": "Amazon CloudFront",
+      "D": "AWS Direct Connect"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 174,
+    "domain": "DOMAIN 5 \u2014 Security, Compliance, and Governance for AI Solutions",
+    "question": "What is the primary purpose of encrypting data at rest for an ML training dataset stored in Amazon S3?",
+    "options": {
+      "A": "To speed up model training",
+      "B": "To protect sensitive data from unauthorized access if the underlying storage is compromised",
+      "C": "To reduce token costs",
+      "D": "To improve model accuracy"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 175,
+    "domain": "DOMAIN 5 \u2014 Security, Compliance, and Governance for AI Solutions",
+    "question": "Which AWS service helps automatically discover and classify sensitive data, such as PII, in S3 buckets used for ML datasets?",
+    "options": {
+      "A": "Amazon Macie",
+      "B": "Amazon Polly",
+      "C": "AWS Direct Connect",
+      "D": "Amazon Route 53"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 176,
+    "domain": "DOMAIN 5 \u2014 Security, Compliance, and Governance for AI Solutions",
+    "question": "Which service provides a detailed, immutable log of API calls made in an AWS account, useful for auditing access to AI/ML resources?",
+    "options": {
+      "A": "AWS CloudTrail",
+      "B": "Amazon Rekognition",
+      "C": "Amazon Lex",
+      "D": "Amazon Forecast"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 177,
+    "domain": "DOMAIN 5 \u2014 Security, Compliance, and Governance for AI Solutions",
+    "question": "AWS Config is primarily used to:",
+    "options": {
+      "A": "Train ML models",
+      "B": "Continuously assess, audit, and evaluate AWS resource configurations against desired compliance rules",
+      "C": "Generate images",
+      "D": "Transcribe audio"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 178,
+    "domain": "DOMAIN 5 \u2014 Security, Compliance, and Governance for AI Solutions",
+    "question": "A company wants to demonstrate compliance with specific regulatory frameworks by accessing AWS's compliance reports and certifications. Which service/resource should they use?",
+    "options": {
+      "A": "AWS Artifact",
+      "B": "Amazon Kendra",
+      "C": "Amazon Polly",
+      "D": "AWS Glue"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 179,
+    "domain": "DOMAIN 5 \u2014 Security, Compliance, and Governance for AI Solutions",
+    "question": "AWS Audit Manager helps organizations:",
+    "options": {
+      "A": "Continuously audit AWS usage to simplify assessing risk and compliance with regulations and industry standards",
+      "B": "Generate marketing content",
+      "C": "Transcribe speech",
+      "D": "Detect objects in images"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 180,
+    "domain": "DOMAIN 5 \u2014 Security, Compliance, and Governance for AI Solutions",
+    "question": "Which AWS service helps assess software vulnerabilities in the compute resources (e.g., EC2 instances, container images) supporting an ML pipeline?",
+    "options": {
+      "A": "Amazon Inspector",
+      "B": "Amazon Polly",
+      "C": "Amazon Forecast",
+      "D": "Amazon Lex"
+    },
+    "correct": "A",
+    "rationale": "Amazon Inspector performs automated vulnerability scanning of compute resources; it's the current in-scope service for this \u2014 Amazon GuardDuty is no longer in the exam's in-scope service list.",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 181,
+    "domain": "DOMAIN 5 \u2014 Security, Compliance, and Governance for AI Solutions",
+    "question": "In the shared responsibility model, who is generally responsible for securing customer data and configuring access controls for ML workloads run on AWS managed AI services?",
+    "options": {
+      "A": "AWS is solely responsible for everything",
+      "B": "The customer retains responsibility for their data, access management, and configuration, while AWS secures the underlying infrastructure",
+      "C": "Neither party is responsible",
+      "D": "A third-party auditor is solely responsible"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 182,
+    "domain": "DOMAIN 5 \u2014 Security, Compliance, and Governance for AI Solutions",
+    "question": "What is a primary security concern with allowing a generative AI application broad, unrestricted access to internal systems via agent/tool integrations?",
+    "options": {
+      "A": "It has no security implications",
+      "B": "It could be manipulated (e.g., via prompt injection) into taking unintended or unauthorized actions, so access should follow least privilege",
+      "C": "It always improves security",
+      "D": "It eliminates the need for IAM"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 183,
+    "domain": "DOMAIN 5 \u2014 Security, Compliance, and Governance for AI Solutions",
+    "question": "Which principle should guide granting permissions to an AI agent that can call internal APIs on a user's behalf?",
+    "options": {
+      "A": "Grant full administrative access for convenience",
+      "B": "Principle of least privilege \u2014 grant only the permissions necessary for the agent's intended functions",
+      "C": "Grant root access to all resources",
+      "D": "Disable all logging for the agent"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 184,
+    "domain": "DOMAIN 5 \u2014 Security, Compliance, and Governance for AI Solutions",
+    "question": "A company must ensure PII is not inadvertently exposed in outputs from its generative AI application. Which combination of controls helps most?",
+    "options": {
+      "A": "No controls needed",
+      "B": "Data redaction/anonymization prior to processing, plus guardrails and output filtering",
+      "C": "Maximizing temperature",
+      "D": "Removing all logging"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 185,
+    "domain": "DOMAIN 5 \u2014 Security, Compliance, and Governance for AI Solutions",
+    "question": "Which encryption practice protects data as it travels between a client application and a Bedrock API endpoint?",
+    "options": {
+      "A": "Encryption in transit (e.g., TLS)",
+      "B": "No encryption is used for API calls",
+      "C": "Only encryption at rest matters",
+      "D": "Physical security only"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 186,
+    "domain": "DOMAIN 5 \u2014 Security, Compliance, and Governance for AI Solutions",
+    "question": "What AWS feature allows an organization to keep AI/ML API traffic within the AWS network, avoiding exposure to the public internet?",
+    "options": {
+      "A": "VPC endpoints (e.g., AWS PrivateLink)",
+      "B": "Public S3 bucket policies",
+      "C": "Root user credentials",
+      "D": "Open security groups"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 187,
+    "domain": "DOMAIN 5 \u2014 Security, Compliance, and Governance for AI Solutions",
+    "question": "Which regulation is commonly relevant when an AI system processes personal data of individuals in the European Union?",
+    "options": {
+      "A": "GDPR",
+      "B": "HIPAA only",
+      "C": "SOX only",
+      "D": "PCI DSS only"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 188,
+    "domain": "DOMAIN 5 \u2014 Security, Compliance, and Governance for AI Solutions",
+    "question": "Which regulation/framework is most relevant when an AI system processes protected health information in the United States?",
+    "options": {
+      "A": "HIPAA",
+      "B": "GDPR only",
+      "C": "FedRAMP only",
+      "D": "ISO 9001 only"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 189,
+    "domain": "DOMAIN 5 \u2014 Security, Compliance, and Governance for AI Solutions",
+    "question": "What governance practice helps ensure an organization maintains an inventory of which AI models are deployed, their purpose, owners, and risk classification?",
+    "options": {
+      "A": "Ignoring model inventory entirely",
+      "B": "Maintaining an AI/ML model governance registry or catalog with ownership and risk documentation",
+      "C": "Avoiding any documentation",
+      "D": "Using only verbal agreements"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 190,
+    "domain": "DOMAIN 5 \u2014 Security, Compliance, and Governance for AI Solutions",
+    "question": "A company wants to restrict which specific foundation models within Amazon Bedrock a given IAM role can invoke. This is accomplished primarily through:",
+    "options": {
+      "A": "IAM policies with resource-level permissions scoped to specific model ARNs",
+      "B": "Amazon Route 53 routing policies",
+      "C": "S3 bucket versioning",
+      "D": "CloudFront distributions"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 191,
+    "domain": "DOMAIN 5 \u2014 Security, Compliance, and Governance for AI Solutions",
+    "question": "Which practice helps protect sensitive training data used to fine-tune a foundation model from unauthorized access?",
+    "options": {
+      "A": "Storing it in a public S3 bucket",
+      "B": "Applying encryption, strict IAM policies, and access logging to the storage location",
+      "C": "Emailing it to all employees",
+      "D": "Disabling all access controls"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 192,
+    "domain": "DOMAIN 5 \u2014 Security, Compliance, and Governance for AI Solutions",
+    "question": "What is a key governance reason to log and retain records of prompts and responses in a production generative AI application?",
+    "options": {
+      "A": "It has no value",
+      "B": "It supports auditability, troubleshooting, compliance reviews, and understanding of model behavior over time",
+      "C": "It is only useful for marketing",
+      "D": "It replaces the need for guardrails"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 193,
+    "domain": "DOMAIN 5 \u2014 Security, Compliance, and Governance for AI Solutions",
+    "question": "Which AWS capability can help enforce that only encrypted, compliant S3 buckets are used as data sources for SageMaker training jobs?",
+    "options": {
+      "A": "AWS Config rules combined with IAM/S3 policies",
+      "B": "Amazon Polly",
+      "C": "Amazon Lex",
+      "D": "AWS Direct Connect"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 194,
+    "domain": "DOMAIN 5 \u2014 Security, Compliance, and Governance for AI Solutions",
+    "question": "A company operating in a regulated industry needs evidence of who accessed a specific SageMaker model endpoint and when. Which service provides this audit trail?",
+    "options": {
+      "A": "AWS CloudTrail",
+      "B": "Amazon Rekognition",
+      "C": "Amazon Forecast",
+      "D": "Amazon Transcribe"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 195,
+    "domain": "DOMAIN 5 \u2014 Security, Compliance, and Governance for AI Solutions",
+    "question": "What is a core governance responsibility when adopting third-party foundation models via Bedrock regarding data usage?",
+    "options": {
+      "A": "Assuming data handling terms are irrelevant",
+      "B": "Reviewing and understanding the data usage, retention, and training policies of both AWS and the model provider",
+      "C": "Ignoring vendor terms entirely",
+      "D": "Sharing all customer data publicly"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 196,
+    "domain": "DOMAIN 5 \u2014 Security, Compliance, and Governance for AI Solutions",
+    "question": "Which of the following is a recommended control to reduce the risk of a compromised credential being used to exfiltrate data via an AI application with broad data access?",
+    "options": {
+      "A": "Multi-factor authentication (MFA) and least-privilege IAM roles",
+      "B": "Sharing root credentials among the team",
+      "C": "Disabling all authentication",
+      "D": "Using the same password everywhere"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 197,
+    "domain": "DOMAIN 5 \u2014 Security, Compliance, and Governance for AI Solutions",
+    "question": "A company wants to ensure its AI governance program addresses risk proportional to the AI use case's potential impact (e.g., more scrutiny for a medical diagnosis tool than an internal meeting summarizer). This reflects:",
+    "options": {
+      "A": "A one-size-fits-all approach to all AI systems regardless of risk",
+      "B": "A risk-based governance approach that tailors oversight to the potential impact of each AI system",
+      "C": "Ignoring risk entirely",
+      "D": "Applying maximum restriction to every use case equally, including low-risk ones"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 198,
+    "domain": "DOMAIN 5 \u2014 Security, Compliance, and Governance for AI Solutions",
+    "question": "Which of the following best describes the purpose of data residency considerations for AI workloads?",
+    "options": {
+      "A": "They are irrelevant to compliance",
+      "B": "Ensuring data is stored/processed in specific geographic locations to meet regulatory or contractual requirements",
+      "C": "They only apply to network latency",
+      "D": "They only apply to billing currency"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 199,
+    "domain": "DOMAIN 5 \u2014 Security, Compliance, and Governance for AI Solutions",
+    "question": "A security review flags that a generative AI application logs full conversation transcripts, including data users typed that may contain PII. What is an appropriate governance response?",
+    "options": {
+      "A": "Ignore the finding",
+      "B": "Apply data minimization/redaction practices, access controls, and retention policies to the logged data consistent with privacy requirements",
+      "C": "Make logs publicly accessible for transparency",
+      "D": "Stop all logging including security-relevant logs"
+    },
+    "correct": "B",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  {
+    "num": 200,
+    "domain": "DOMAIN 5 \u2014 Security, Compliance, and Governance for AI Solutions",
+    "question": "Which combination best reflects a mature approach to securing and governing an AI/ML pipeline on AWS end-to-end?",
+    "options": {
+      "A": "IAM least privilege, encryption at rest/in transit, CloudTrail/Config for auditing, Macie for sensitive data discovery, and documented model governance",
+      "B": "Public buckets, shared root credentials, and no logging",
+      "C": "No IAM policies and open network access",
+      "D": "Ignoring encryption and audit requirements entirely"
+    },
+    "correct": "A",
+    "rationale": "",
+    "date_added": "2026-09-02",
+    "source_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  }
+]

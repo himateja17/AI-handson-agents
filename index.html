@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIF-C01 Drill — 200 Questions</title>
+<style>
+  @font-face {
+    font-family: 'Source Serif';
+    src: local('Source Serif 4'), local('Source Serif Pro');
+  }
+  :root{
+    --paper:#EDEEEA;
+    --paper-raised:#E3E4DD;
+    --ink:#1B1D1B;
+    --ink-soft:#5B5D57;
+    --rule:#C9CBC1;
+    --amber:#A66A1E;
+    --amber-soft:#F0E2CD;
+    --good:#2E7D46;
+    --good-soft:#DCEBDF;
+    --bad:#B23B2E;
+    --bad-soft:#F3DEDA;
+    --focus:#2C5AA6;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Iowan Old Style','Palatino Linotype',Georgia,'Source Serif',serif;
+    min-height:100vh;
+    -webkit-font-smoothing:antialiased;
+  }
+  .chrome-font{
+    font-family:'Avenir Next','Segoe UI',Helvetica,Arial,sans-serif;
+  }
+  a{color:inherit;}
+
+  /* ---------- top bar ---------- */
+  .topbar{
+    position:sticky; top:0; z-index:20;
+    background:var(--paper);
+    border-bottom:1px solid var(--rule);
+  }
+  .topbar-inner{
+    max-width:760px; margin:0 auto;
+    padding:14px 20px 12px;
+  }
+  .topbar-row{
+    display:flex; align-items:baseline; justify-content:space-between;
+    gap:12px;
+  }
+  .brand{
+    font-family:'Avenir Next','Segoe UI',Helvetica,Arial,sans-serif;
+    font-weight:600; font-size:15px; letter-spacing:0.01em;
+  }
+  .brand small{
+    display:block; font-weight:400; color:var(--ink-soft); font-size:12px; margin-top:1px;
+  }
+  .score-chip{
+    font-family:'Avenir Next','Segoe UI',Helvetica,Arial,sans-serif;
+    font-size:13px; color:var(--ink-soft); white-space:nowrap;
+  }
+  .score-chip b{ color:var(--ink); font-weight:600; }
+
+  .progress-track{
+    margin-top:10px; height:4px; background:var(--rule); border-radius:2px; overflow:hidden;
+  }
+  .progress-fill{
+    height:100%; background:var(--amber); width:0%;
+    transition:width .35s ease;
+  }
+
+  .domain-nav{
+    display:flex; gap:6px; margin-top:12px; flex-wrap:wrap;
+  }
+  .domain-btn{
+    font-family:'Avenir Next','Segoe UI',Helvetica,Arial,sans-serif;
+    font-size:12.5px; padding:6px 10px;
+    border:1px solid var(--rule); border-radius:5px;
+    background:transparent; color:var(--ink-soft);
+    cursor:pointer;
+  }
+  .domain-btn.active{
+    background:var(--ink); border-color:var(--ink); color:var(--paper);
+  }
+  .domain-btn:focus-visible, button:focus-visible, .option:focus-visible{
+    outline:3px solid var(--focus); outline-offset:2px;
+  }
+
+  /* ---------- main ---------- */
+  main{ max-width:760px; margin:0 auto; padding:28px 20px 100px; }
+
+  .qmeta{
+    font-family:'Avenir Next','Segoe UI',Helvetica,Arial,sans-serif;
+    font-size:12.5px; color:var(--ink-soft); margin-bottom:10px;
+    display:flex; justify-content:space-between; align-items:baseline;
+  }
+  .qmeta .domain-label{ color:var(--amber); font-weight:600; }
+
+  .qcard{
+    background:var(--paper-raised);
+    border:1px solid var(--rule);
+    border-radius:10px;
+    padding:26px 26px 20px;
+  }
+  .qnum{
+    font-family:'Avenir Next','Segoe UI',Helvetica,Arial,sans-serif;
+    font-weight:700; font-size:13px; color:var(--ink-soft); margin-bottom:8px;
+  }
+  .qtext{
+    font-size:20px; line-height:1.42; margin:0 0 22px;
+    max-width:65ch;
+  }
+
+  .options{ display:flex; flex-direction:column; gap:10px; }
+  .option{
+    display:flex; align-items:flex-start; gap:12px;
+    text-align:left;
+    width:100%;
+    background:var(--paper);
+    border:1px solid var(--rule);
+    border-radius:8px;
+    padding:13px 16px;
+    font-family:'Iowan Old Style','Palatino Linotype',Georgia,serif;
+    font-size:16px; line-height:1.4;
+    color:var(--ink);
+    cursor:pointer;
+    transition:border-color .12s ease, background .12s ease;
+  }
+  .option:hover:not(.locked){
+    border-color:var(--ink-soft);
+  }
+  .option .letter{
+    font-family:'Avenir Next','Segoe UI',Helvetica,Arial,sans-serif;
+    font-weight:700; font-size:13px;
+    color:var(--ink-soft);
+    border:1px solid var(--rule);
+    border-radius:50%;
+    width:22px; height:22px; min-width:22px;
+    display:flex; align-items:center; justify-content:center;
+    margin-top:1px;
+  }
+  .option.locked{ cursor:default; }
+  .option.correct{
+    background:var(--good-soft); border-color:var(--good);
+  }
+  .option.correct .letter{ background:var(--good); border-color:var(--good); color:#fff; }
+  .option.incorrect{
+    background:var(--bad-soft); border-color:var(--bad);
+  }
+  .option.incorrect .letter{ background:var(--bad); border-color:var(--bad); color:#fff; }
+  .option.faded{ opacity:.55; }
+
+  .verdict{
+    margin-top:18px; padding-top:16px; border-top:1px solid var(--rule);
+    display:none;
+  }
+  .verdict.show{ display:block; }
+  .verdict-line{
+    font-family:'Avenir Next','Segoe UI',Helvetica,Arial,sans-serif;
+    font-weight:700; font-size:14px; margin-bottom:6px;
+  }
+  .verdict-line.correct{ color:var(--good); }
+  .verdict-line.incorrect{ color:var(--bad); }
+  .rationale{
+    font-size:15.5px; line-height:1.5; color:var(--ink-soft); max-width:62ch;
+  }
+
+  .navrow{
+    display:flex; justify-content:space-between; align-items:center;
+    margin-top:22px;
+  }
+  .navbtn{
+    font-family:'Avenir Next','Segoe UI',Helvetica,Arial,sans-serif;
+    font-size:14px; font-weight:600;
+    padding:11px 18px; border-radius:7px;
+    border:1px solid var(--ink); background:var(--ink); color:var(--paper);
+    cursor:pointer;
+  }
+  .navbtn.ghost{
+    background:transparent; color:var(--ink); border-color:var(--rule);
+  }
+  .navbtn:disabled{ opacity:.35; cursor:not-allowed; }
+
+  .jumprow{
+    margin-top:10px; text-align:center;
+    font-family:'Avenir Next','Segoe UI',Helvetica,Arial,sans-serif;
+    font-size:12.5px; color:var(--ink-soft);
+  }
+  .jumprow button{
+    background:none; border:none; color:var(--ink-soft); text-decoration:underline;
+    cursor:pointer; font-size:12.5px; font-family:inherit; padding:0;
+  }
+
+  /* ---------- summary screen ---------- */
+  .summary{ display:none; }
+  .summary.show{ display:block; }
+  .summary h1{
+    font-size:26px; margin:0 0 6px;
+  }
+  .summary p.sub{ color:var(--ink-soft); margin:0 0 24px; font-size:15.5px; }
+  .summary-grid{
+    display:grid; grid-template-columns:repeat(2,1fr); gap:10px;
+    margin-bottom:24px;
+  }
+  .stat{
+    background:var(--paper-raised); border:1px solid var(--rule); border-radius:8px;
+    padding:16px;
+  }
+  .stat .num{ font-size:28px; font-weight:700; line-height:1; }
+  .stat .lbl{
+    font-family:'Avenir Next','Segoe UI',Helvetica,Arial,sans-serif;
+    font-size:12px; color:var(--ink-soft); margin-top:6px;
+  }
+  .domain-breakdown{ margin-bottom:26px; }
+  .domain-breakdown h2{
+    font-family:'Avenir Next','Segoe UI',Helvetica,Arial,sans-serif;
+    font-size:13px; text-transform:none; color:var(--ink-soft); font-weight:600;
+    margin:0 0 10px;
+  }
+  .dbar-row{ margin-bottom:12px; }
+  .dbar-label{
+    font-family:'Avenir Next','Segoe UI',Helvetica,Arial,sans-serif;
+    font-size:13px; display:flex; justify-content:space-between; margin-bottom:5px;
+  }
+  .dbar-track{ height:8px; background:var(--rule); border-radius:4px; overflow:hidden; }
+  .dbar-fill{ height:100%; background:var(--amber); }
+
+  footer.note{
+    max-width:760px; margin:40px auto 0; padding:0 20px;
+    font-family:'Avenir Next','Segoe UI',Helvetica,Arial,sans-serif;
+    font-size:12px; color:var(--ink-soft); line-height:1.6;
+  }
+
+  @media (max-width:520px){
+    .qtext{ font-size:18px; }
+    .qcard{ padding:20px 18px 16px; }
+    .summary-grid{ grid-template-columns:1fr 1fr; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ transition:none !important; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-row">
+      <div class="brand chrome-font">AIF-C01 Drill<small id="bankMeta">Loading question bank…</small></div>
+      <div class="score-chip chrome-font"><b id="scoreCorrect">0</b>/<span id="scoreAnswered">0</span> answered · <b id="scorePct">—</b></div>
+    </div>
+    <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+    <div class="domain-nav chrome-font" id="domainNav"></div>
+  </div>
+</div>
+
+<main>
+
+  <div id="quizView">
+    <div class="qmeta chrome-font">
+      <span class="domain-label" id="domainLabel"></span>
+      <span id="posLabel"></span>
+    </div>
+
+    <div class="qcard">
+      <div class="qnum" id="qNum"></div>
+      <p class="qtext" id="qText"></p>
+      <div class="options" id="options"></div>
+
+      <div class="verdict" id="verdict">
+        <div class="verdict-line" id="verdictLine"></div>
+        <div class="rationale" id="rationale"></div>
+      </div>
+    </div>
+
+    <div class="navrow">
+      <button class="navbtn ghost" id="prevBtn">← Previous</button>
+      <button class="navbtn" id="nextBtn">Next →</button>
+    </div>
+    <div class="jumprow">
+      <button id="jumpUnanswered">Jump to next unanswered</button>
+      &nbsp;·&nbsp;
+      <button id="viewSummary">View summary</button>
+    </div>
+  </div>
+
+  <div class="summary" id="summaryView">
+    <h1>Session summary</h1>
+    <p class="sub" id="summarySub">Review your results, then jump back into any domain.</p>
+    <div class="summary-grid">
+      <div class="stat"><div class="num" id="sumScore">0%</div><div class="lbl chrome-font">OVERALL SCORE</div></div>
+      <div class="stat"><div class="num" id="sumAnswered">0 / 200</div><div class="lbl chrome-font">ANSWERED</div></div>
+    </div>
+    <div class="domain-breakdown">
+      <h2 class="chrome-font">By domain</h2>
+      <div id="domainBars"></div>
+    </div>
+    <div class="navrow" style="margin-top:0;">
+      <button class="navbtn ghost" id="backToQuiz">← Back to questions</button>
+      <button class="navbtn ghost" id="resetBtn">Reset all answers</button>
+    </div>
+  </div>
+
+</main>
+
+<footer class="note chrome-font">
+  Source: your 200-question AIF-C01 practice set, domains weighted 20/24/28/14/14% to match the official exam guide.
+  Answers are cross-checked against the answer key embedded from that document — nothing here is generated on the fly.
+</footer>
+
+<script>
+let QUESTIONS = [];
+let MANIFEST = null;
+
+const DOMAIN_SHORT = {
+  "DOMAIN 1 — Fundamentals of AI and ML": "D1 · AI & ML",
+  "DOMAIN 2 — Fundamentals of Generative AI": "D2 · GenAI",
+  "DOMAIN 3 — Applications of Foundation Models": "D3 · Applications",
+  "DOMAIN 4 — Guidelines for Responsible AI": "D4 · Responsible AI",
+  "DOMAIN 5 — Security, Compliance, and Governance for AI Solutions": "D5 · Security & Governance"
+};
+const domainOrder = [...new Set(QUESTIONS.map(q => q.domain))];
+
+let current = 0;                 // index into filtered list
+let filterDomain = "ALL";
+let filtered = QUESTIONS.slice();
+const answers = {};              // num -> {picked, correct}
+
+const els = {
+  domainNav: document.getElementById('domainNav'),
+  domainLabel: document.getElementById('domainLabel'),
+  posLabel: document.getElementById('posLabel'),
+  qNum: document.getElementById('qNum'),
+  qText: document.getElementById('qText'),
+  options: document.getElementById('options'),
+  verdict: document.getElementById('verdict'),
+  verdictLine: document.getElementById('verdictLine'),
+  rationale: document.getElementById('rationale'),
+  prevBtn: document.getElementById('prevBtn'),
+  nextBtn: document.getElementById('nextBtn'),
+  progressFill: document.getElementById('progressFill'),
+  scoreCorrect: document.getElementById('scoreCorrect'),
+  scoreAnswered: document.getElementById('scoreAnswered'),
+  scorePct: document.getElementById('scorePct'),
+  quizView: document.getElementById('quizView'),
+  summaryView: document.getElementById('summaryView'),
+  sumScore: document.getElementById('sumScore'),
+  sumAnswered: document.getElementById('sumAnswered'),
+  domainBars: document.getElementById('domainBars'),
+};
+
+function buildDomainNav(){
+  const allBtn = document.createElement('button');
+  allBtn.className = 'domain-btn active';
+  allBtn.textContent = 'All (200)';
+  allBtn.onclick = () => setFilter('ALL');
+  els.domainNav.appendChild(allBtn);
+
+  domainOrder.forEach(d => {
+    const count = QUESTIONS.filter(q => q.domain === d).length;
+    const btn = document.createElement('button');
+    btn.className = 'domain-btn';
+    btn.textContent = `${DOMAIN_SHORT[d] || d} (${count})`;
+    btn.onclick = () => setFilter(d);
+    btn.dataset.domain = d;
+    els.domainNav.appendChild(btn);
+  });
+}
+
+function setFilter(domain){
+  filterDomain = domain;
+  filtered = domain === 'ALL' ? QUESTIONS.slice() : QUESTIONS.filter(q => q.domain === domain);
+  current = 0;
+  document.querySelectorAll('.domain-btn').forEach(b => b.classList.remove('active'));
+  const target = domain === 'ALL'
+    ? els.domainNav.children[0]
+    : [...els.domainNav.children].find(b => b.dataset.domain === domain);
+  if (target) target.classList.add('active');
+  showQuiz();
+  render();
+}
+
+function letterIndex(l){ return {A:0,B:1,C:2,D:3}[l]; }
+
+function render(){
+  const q = filtered[current];
+  els.domainLabel.textContent = DOMAIN_SHORT[q.domain] || q.domain;
+  els.posLabel.textContent = `Question ${current+1} of ${filtered.length}`;
+  els.qNum.textContent = `Q${q.num}`;
+  els.qText.textContent = q.question;
+
+  els.options.innerHTML = '';
+  const prior = answers[q.num];
+
+  ['A','B','C','D'].forEach(letter => {
+    const btn = document.createElement('button');
+    btn.className = 'option';
+    btn.innerHTML = `<span class="letter">${letter}</span><span>${q.options[letter]}</span>`;
+    if (prior){
+      btn.classList.add('locked');
+      if (letter === q.correct) btn.classList.add('correct');
+      else if (letter === prior.picked) btn.classList.add('incorrect');
+      else btn.classList.add('faded');
+    }
+    btn.onclick = () => selectAnswer(q, letter);
+    els.options.appendChild(btn);
+  });
+
+  if (prior){
+    els.verdict.classList.add('show');
+    const isCorrect = prior.picked === q.correct;
+    els.verdictLine.textContent = isCorrect ? 'Correct.' : `Not quite — correct answer is ${q.correct}.`;
+    els.verdictLine.className = 'verdict-line ' + (isCorrect ? 'correct' : 'incorrect');
+    els.rationale.textContent = q.rationale ? q.rationale : '';
+  } else {
+    els.verdict.classList.remove('show');
+  }
+
+  els.prevBtn.disabled = current === 0;
+  els.nextBtn.textContent = current === filtered.length - 1 ? 'Finish →' : 'Next →';
+
+  updateScoreboard();
+}
+
+function selectAnswer(q, letter){
+  if (answers[q.num]) return; // locked after first pick
+  answers[q.num] = { picked: letter, correct: q.correct };
+  render();
+}
+
+function updateScoreboard(){
+  const answeredNums = Object.keys(answers);
+  const answeredCount = answeredNums.length;
+  const correctCount = answeredNums.filter(n => answers[n].picked === answers[n].correct).length;
+  els.scoreCorrect.textContent = correctCount;
+  els.scoreAnswered.textContent = answeredCount;
+  els.scorePct.textContent = answeredCount ? Math.round(100*correctCount/answeredCount) + '%' : '—';
+  const pct = 100 * (Object.keys(answers).filter(n => QUESTIONS.find(q=>q.num==n)).length) / QUESTIONS.length;
+  els.progressFill.style.width = pct + '%';
+}
+
+function showQuiz(){
+  els.quizView.style.display = '';
+  els.summaryView.classList.remove('show');
+}
+function showSummary(){
+  els.quizView.style.display = 'none';
+  els.summaryView.classList.add('show');
+  renderSummary();
+}
+
+function renderSummary(){
+  const answeredNums = Object.keys(answers);
+  const total = QUESTIONS.length;
+  const answeredCount = answeredNums.length;
+  const correctCount = answeredNums.filter(n => answers[n].picked === answers[n].correct).length;
+  els.sumScore.textContent = answeredCount ? Math.round(100*correctCount/answeredCount) + '%' : '—';
+  els.sumAnswered.textContent = `${answeredCount} / ${total}`;
+
+  els.domainBars.innerHTML = '';
+  domainOrder.forEach(d => {
+    const qs = QUESTIONS.filter(q => q.domain === d);
+    const ansForDomain = qs.filter(q => answers[q.num]);
+    const correctForDomain = ansForDomain.filter(q => answers[q.num].picked === q.correct);
+    const pct = ansForDomain.length ? Math.round(100*correctForDomain.length/ansForDomain.length) : 0;
+
+    const row = document.createElement('div');
+    row.className = 'dbar-row';
+    row.innerHTML = `
+      <div class="dbar-label chrome-font">
+        <span>${DOMAIN_SHORT[d] || d}</span>
+        <span>${ansForDomain.length ? correctForDomain.length + '/' + ansForDomain.length + ' · ' + pct + '%' : 'not started'}</span>
+      </div>
+      <div class="dbar-track"><div class="dbar-fill" style="width:${ansForDomain.length ? pct : 0}%"></div></div>
+    `;
+    els.domainBars.appendChild(row);
+  });
+}
+
+document.getElementById('prevBtn').onclick = () => {
+  if (current > 0){ current--; render(); window.scrollTo({top:0, behavior:'smooth'}); }
+};
+document.getElementById('nextBtn').onclick = () => {
+  if (current < filtered.length - 1){ current++; render(); window.scrollTo({top:0, behavior:'smooth'}); }
+  else { showSummary(); }
+};
+document.getElementById('jumpUnanswered').onclick = () => {
+  const startAt = current;
+  for (let i=1; i<=filtered.length; i++){
+    const idx = (startAt + i) % filtered.length;
+    if (!answers[filtered[idx].num]){ current = idx; render(); window.scrollTo({top:0, behavior:'smooth'}); return; }
+  }
+  showSummary();
+};
+document.getElementById('viewSummary').onclick = showSummary;
+document.getElementById('backToQuiz').onclick = showQuiz;
+document.getElementById('resetBtn').onclick = () => {
+  if (confirm('Clear all 200 answers and start over?')){
+    Object.keys(answers).forEach(k => delete answers[k]);
+    current = 0;
+    showQuiz();
+    render();
+  }
+};
+
+document.addEventListener('keydown', (e) => {
+  if (els.summaryView.classList.contains('show')) return;
+  if (['1','2','3','4'].includes(e.key)){
+    const letter = ['A','B','C','D'][parseInt(e.key)-1];
+    selectAnswer(filtered[current], letter);
+  } else if (e.key === 'ArrowRight'){ document.getElementById('nextBtn').click(); }
+  else if (e.key === 'ArrowLeft'){ document.getElementById('prevBtn').click(); }
+});
+
+async function loadData(){
+  try {
+    const [qRes, mRes] = await Promise.all([
+      fetch('questions.json?v=' + Date.now()),
+      fetch('manifest.json?v=' + Date.now()).catch(() => null),
+    ]);
+    QUESTIONS = await qRes.json();
+    if (mRes && mRes.ok) MANIFEST = await mRes.json();
+  } catch (e) {
+    document.getElementById('bankMeta').textContent = 'Could not load question bank — check questions.json is reachable.';
+    console.error(e);
+    return;
+  }
+
+  filtered = QUESTIONS.slice();
+  const bankMeta = document.getElementById('bankMeta');
+  if (MANIFEST) {
+    bankMeta.textContent = `${MANIFEST.total_questions} questions · updated ${MANIFEST.last_updated}` +
+      (MANIFEST.added_today ? ` (+${MANIFEST.added_today} today)` : '');
+  } else {
+    bankMeta.textContent = `${QUESTIONS.length} questions, all domains`;
+  }
+
+  buildDomainNav();
+  render();
+}
+loadData();
+</script>
+
+</body>
+</html>

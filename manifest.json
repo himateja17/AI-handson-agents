@@ -1,0 +1,12 @@
+{
+  "total_questions": 200,
+  "last_updated": "2026-09-02",
+  "added_today": 0,
+  "domain_counts": {
+    "DOMAIN 1 \u2014 Fundamentals of AI and ML": 40,
+    "DOMAIN 2 \u2014 Fundamentals of Generative AI": 48,
+    "DOMAIN 3 \u2014 Applications of Foundation Models": 56,
+    "DOMAIN 4 \u2014 Guidelines for Responsible AI": 28,
+    "DOMAIN 5 \u2014 Security, Compliance, and Governance for AI Solutions": 28
+  }
+}

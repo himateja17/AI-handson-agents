@@ -1,0 +1,43 @@
+name: Daily AIF-C01 question generation
+
+on:
+  schedule:
+    # 09:00 UTC daily. Adjust to taste — GitHub Actions cron can run late
+    # during high-load periods, which is fine for a daily job like this.
+    - cron: "0 9 * * *"
+  workflow_dispatch: {}   # lets you trigger it manually from the Actions tab to test
+
+permissions:
+  contents: write   # needed so the job can commit questions.json back to the repo
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run pipeline
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/run_pipeline.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "aif-quiz-agent"
+          git config user.email "actions@users.noreply.github.com"
+          git add site/questions.json site/manifest.json data/
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Daily question batch: $(date -u +%Y-%m-%d)"
+            git push
+          fi
